@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/cars/danny-sleeuwenhoek-H7ukvaVGPqg-unsplash.jpg");
+}
+
+#grid_wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10fr 5fr 85fr;
+    grid-template-areas: 
+    "he he he he"
+    "n1 n2 n3 n4"
+    "se se se se";
+}
+
+header {
+    grid-area: he;
+    background-color: lightblue;
+}
+
+.nav-grid-wrapper {
+    display: grid;
+    border: 3px solid black;
+
+}
+
+.nav-grid-wrapper:hover{
+    background-color: antiquewhite;
+}
+
+#n1 {
+    grid-area: n1;
+    text-align: center;
+}
+
+#n2 {
+    grid-area: n2;
+    text-align: center;
+}
+
+#n3 {
+    grid-area: n3;
+    text-align: center;
+}
+
+#n4 {
+    grid-area: n4;
+    text-align: center;
+}
