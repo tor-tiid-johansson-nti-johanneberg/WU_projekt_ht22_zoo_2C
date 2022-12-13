@@ -6,6 +6,7 @@
 
 body {
     background-image: url("../img/cars/danny-sleeuwenhoek-H7ukvaVGPqg-unsplash.jpg");
+    background-size: cover;
 }
 
 #grid_wrapper {
