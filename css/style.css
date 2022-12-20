@@ -2,11 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+}
+
+#index_h1_box_outline {
+    outline: 10px;
+    outline-color: rgb(100, 34, 43);
+    outline-style: ridge;
 }
 
 #body_index {
-    background-image: url("../img/cars/danny-sleeuwenhoek-H7ukvaVGPqg-unsplash.jpg");
+    background: rgba(0,0,0,0.6) url("../img/cars/danny-sleeuwenhoek-H7ukvaVGPqg-unsplash.jpg");
     background-size: cover;
+    background-blend-mode: darken;
 }
 
 #grid_wrapper {
@@ -20,9 +38,32 @@
     "se se se se";
 }
 
+#grid_wrapper_kontakt {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 14fr;
+    grid-template-areas: 
+    "h1 h1 h1 h1"
+    "n5 n6 n7 n8"
+    "s1 s1 s1 s1"
+    "s2 s2 s2 s2";
+}
+
+.index_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: se;
+}
+
 #header_index {
     grid-area: he;
-    background-color: paleturquoise;
+    background-color: rgb(100, 34, 43);
+}
+#header_kontakt {
+    grid-area: h1;
+    background-color: rgb(100, 34, 43);
 }
 
 ul {
@@ -58,22 +99,46 @@ ul {
     grid-area: n4;
     text-align: center;
 }
+#n5 {
+    grid-area: n5;
+    text-align: center;
+}
+
+#n6 {
+    grid-area: n6;
+    text-align: center;
+}
+
+#n7 {
+    grid-area: n7;
+    text-align: center;
+}
+
+#n8 {
+    grid-area: n8;
+    text-align: center;
+}
+
+#body_meny {
+    background-color: darkgrey;
+}
 
 #body_kontakt {
     background-color: darkgrey;
-    
-
-    
 }
 
+#section_top_kontakt  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: s1;
+}
 .container {
     display: flex;
     justify-content:space-around;
     align-items: flex-start;
-    grid-area: se;
+    grid-area: s2;
 }
-
-
 
 .card {
     background-color: blanchedalmond;
