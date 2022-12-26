@@ -21,7 +21,7 @@ h1 {
     outline-style: ridge;
 }
 
-#body_index {
+body {
     background: rgba(0,0,0,0.6) url("../img/cars/danny-sleeuwenhoek-H7ukvaVGPqg-unsplash.jpg");
     background-size: cover;
     background-blend-mode: darken;
@@ -31,7 +31,7 @@ h1 {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10fr 5fr 85fr;
+    grid-template-rows: 2fr 1fr 17fr;
     grid-template-areas: 
     "he he he he"
     "n1 n2 n3 n4"
@@ -42,7 +42,7 @@ h1 {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr 14fr;
+    grid-template-rows: 2fr 1fr 1fr 16fr;
     grid-template-areas: 
     "h1 h1 h1 h1"
     "n5 n6 n7 n8"
@@ -57,11 +57,15 @@ h1 {
     grid-area: se;
 }
 
-#header_index {
+#header {
+    display: flex;
+    align-items: center;
     grid-area: he;
     background-color: rgb(100, 34, 43);
 }
 #header_kontakt {
+    display: flex;
+    align-items: center;
     grid-area: h1;
     background-color: rgb(100, 34, 43);
 }
@@ -80,51 +84,41 @@ ul {
     background-color: antiquewhite;
 }
 
+.nav_style {
+    text-align: center;
+    align-items: center;
+    font-size: large;
+}
+
 #n1 {
     grid-area: n1;
-    text-align: center;
 }
 
 #n2 {
     grid-area: n2;
-    text-align: center;
 }
 
 #n3 {
     grid-area: n3;
-    text-align: center;
 }
 
 #n4 {
     grid-area: n4;
-    text-align: center;
 }
 #n5 {
     grid-area: n5;
-    text-align: center;
 }
 
 #n6 {
     grid-area: n6;
-    text-align: center;
 }
 
 #n7 {
     grid-area: n7;
-    text-align: center;
 }
 
 #n8 {
     grid-area: n8;
-    text-align: center;
-}
-
-#body_meny {
-    background-color: darkgrey;
-}
-
-#body_kontakt {
-    background-color: darkgrey;
 }
 
 #section_top_kontakt  {
@@ -163,4 +157,11 @@ ul {
 }
 .car-3 {
     background-image: url("/img/cars/card-car-skyline.jpg");
+}
+
+.meny_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: se;
 }
