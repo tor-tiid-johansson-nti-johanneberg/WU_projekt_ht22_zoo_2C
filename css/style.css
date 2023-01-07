@@ -135,17 +135,23 @@ ul {
 }
 
 .card {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     background-color: blanchedalmond;
     width: 280px;
     height: 400px;
     margin: 10px;
+    
 }
 
 .card_image {
-    background-color: blueviolet;
     height: 170px;
     margin-bottom: 15px;
     background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0.7))); /* gradient, vet inte om jag tycker om det eller ej */
 }
 
 .car-1 {
